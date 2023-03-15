@@ -1,0 +1,63 @@
+User:
+{
+    "email": "",
+    "username": "",
+    "password": ""
+}
+
+
+Company:
+{
+    "company_name": "",
+    "created_by": "",
+    "phone": "",
+    "address": "",
+    "city": "",
+    "zipcode": "",
+    "country": ""
+}
+
+
+Asset:
+{
+    "name": "",
+    "condition": "",
+    "company": ""
+}
+
+
+Delegation:
+{
+    "name": "",
+    "condition": "",
+    "company": ""
+}
+
+
+
+
+
+
+
+API Documentation:
+
+Admin Panel:
+email: admin@a.com
+password: 12345admin
+http://127.0.0.1:8000/admin/Main/delegation/
+
+
+
+http://127.0.0.1:8000/login/company/ - create companies
+http://127.0.0.1:8000/login/user/ - create user (owners of companies)
+
+
+
+
+
+http://127.0.0.1:8000/main/get_deligated_assets/company_id/asset_id/ - get all the assets deligated from company
+http://127.0.0.1:8000/main/get_employee/company_id/ - get all the companies details
+http://127.0.0.1:8000/main/get_assets/company_id/ - get companies assets enlisted by them
+http://127.0.0.1:8000/main/createdelegation/ - create deligation passing companies id, asset_id,employee_id that is to be assigned 
+http://127.0.0.1:8000/main/createasset/ - create assets by companies
+http://127.0.0.1:8000/main/createmployee/ - create assets by companies
